@@ -37,5 +37,59 @@ public class RendezVous {
     @ManyToOne
     Compte compte;
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getDate_RDV() {
+        return date_RDV;
+    }
+
+    public void setDate_RDV(LocalDateTime date_RDV) {
+        this.date_RDV = date_RDV;
+    }
+
+    public Date getDate_demande() {
+        return date_demande;
+    }
+
+    public void setDate_demande(Date date_demande) {
+        this.date_demande = date_demande;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public Medecin getMedecin() {
+        return medecin;
+    }
+
+    public void setMedecin(Medecin medecin) {
+        this.medecin = medecin;
+    }
+
+    public StatusRDV getStatusRDV() {
+        return statusRDV;
+    }
+
+    public void setStatusRDV(StatusRDV statusRDV) {
+        this.statusRDV = statusRDV;
+    }
+
+    public Compte getCompte() {
+        return compte;
+    }
+
+    public void setCompte(Compte compte) {
+        this.compte = compte;
+    }
 }

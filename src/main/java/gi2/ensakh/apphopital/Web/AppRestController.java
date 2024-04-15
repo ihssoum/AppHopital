@@ -180,9 +180,15 @@ public class AppRestController {
     }
     @GetMapping("/list")
     public String TESTGIT22git() {
-        return "this is a test ";
-
+        return "this is a test ";}
+    public void GitMethode(){
+        System.out.println("Hello!");
     }
+    public void GitMethode1(){
+        System.out.println("Hello 1!");
+    }
+
+
 
 
 
