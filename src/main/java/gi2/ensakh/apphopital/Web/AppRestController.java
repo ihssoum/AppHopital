@@ -178,6 +178,11 @@ public class AppRestController {
         return "this is a test ";
 
     }
+    @GetMapping("/list")
+    public String TESTGIT22git() {
+        return "this is a test ";
+
+    }
 
 
 
