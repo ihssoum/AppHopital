@@ -13,4 +13,28 @@ public class checkTime {
     @Temporal(TemporalType.DATE)
     @JsonFormat(pattern = "yyyy-MM-dd")
     Date date_demande;
+
+    public String getCin() {
+        return cin;
+    }
+
+    public void setCin(String cin) {
+        this.cin = cin;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public Date getDate_demande() {
+        return date_demande;
+    }
+
+    public void setDate_demande(Date date_demande) {
+        this.date_demande = date_demande;
+    }
 }

@@ -26,4 +26,27 @@ public class Patient extends Personne {
     @OneToMany(mappedBy = "patient")
     private List<Reclamation> reclamations;
 
+    public List<RendezVous> getRDV() {
+        return RDV;
+    }
+
+    public void setRDV(List<RendezVous> RDV) {
+        this.RDV = RDV;
+    }
+
+    public List<Medecin> getMedecins() {
+        return medecins;
+    }
+
+    public void setMedecins(List<Medecin> medecins) {
+        this.medecins = medecins;
+    }
+
+    public List<Reclamation> getReclamations() {
+        return reclamations;
+    }
+
+    public void setReclamations(List<Reclamation> reclamations) {
+        this.reclamations = reclamations;
+    }
 }

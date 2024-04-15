@@ -177,6 +177,9 @@ public class AppRestController {
         }
         return null;
     }
+    public void GitMethode(){
+        System.out.println("Hello!");
+    }
 
     }
 
