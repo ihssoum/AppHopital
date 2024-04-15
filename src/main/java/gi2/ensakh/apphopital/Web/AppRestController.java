@@ -84,8 +84,6 @@ public class AppRestController {
     }
 
 
-
-
     @PostMapping("/patient")
     @PreAuthorize("hasAuthority('SCOPE_ROLE_SECRETAIRE')")
     public void patient(@RequestBody Patient patient1) {
@@ -173,24 +171,33 @@ public class AppRestController {
         }
         return null;
     }
+
     @GetMapping("/list")
     public String TESTGIT() {
         return "this is a test ";
 
     }
+
     @GetMapping("/list")
     public String TESTGIT22git() {
-        return "this is a test ";}
-    public void GitMethode(){
+        return "this is a test ";
+    }
+
+    public void GitMethode() {
         System.out.println("Hello!");
     }
-    public void GitMethode1(){
-        System.out.println("Hello 1!");
+
+    public void GitMethode2() {
+        System.out.println("Hello its imane!");
     }
 
 
-
-
+    public void GitMethode1() {
+        System.out.println("Hello 1!");
+    }
+    public void GitMethode4() {
+        System.out.println("Hello worldddddddddddd!");
+    }
 
 
 }
