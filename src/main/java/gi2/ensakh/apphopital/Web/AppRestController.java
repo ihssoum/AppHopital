@@ -180,6 +180,10 @@ public class AppRestController {
     public void GitMethode(){
         System.out.println("Hello!");
     }
+    public void GitMethode2(){
+        System.out.println("Hello its imane!");
+    }
+
 
     }
 
