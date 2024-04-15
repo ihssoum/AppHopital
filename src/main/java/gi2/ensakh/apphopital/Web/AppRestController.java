@@ -38,11 +38,7 @@ public class AppRestController {
         String cinMed = rendezVousRepository.findCinPatientByIdRDV(Id);
         return patientRepository.findPatientByCin(cinMed);
     }
-    @GetMapping("/note")
-    @PreAuthorize("hasAuthority('SCOPE_ROLE_ADMIN')")
-    public List<Note> noteTestGit() {
-        return noteRepository.findAll();
-    }
+
 
     @GetMapping("/SecByRDV/{idRDV}")
     @PreAuthorize("hasAuthority('SCOPE_ROLE_ADMIN')")
@@ -177,6 +173,14 @@ public class AppRestController {
         }
         return null;
     }
+    @GetMapping("/list")
+    public String TESTGIT() {
+        return "this is a test ";
 
     }
+
+
+
+
+}
 
